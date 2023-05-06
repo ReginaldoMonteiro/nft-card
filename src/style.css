@@ -1,0 +1,127 @@
+
+html{
+    font-size: 62.5%;
+}
+
+body {
+    max-width: 1440px;
+    margin: auto;
+    background-color: rgb(107, 33, 177);
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    margin: 0 auto;
+    width: 375px;
+    height: auto;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: blueviolet;
+    box-shadow: 10px 10px 50px black;
+}
+
+.imagem-main {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.imagem-main img {
+    width: 330px;
+    border-radius: 10px;    
+}
+.overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgba(0, 183, 255, 0.534);
+    display:none;
+    transition: 0.4s ease-in-out;
+}
+.overlay img{
+    position: absolute;
+    width: 50px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);    
+}
+
+.imagem-main:hover .overlay{
+    display: block;
+}
+
+.textos a { 
+    padding: 20px 0;
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+    font-size: 1.8rem;
+    transition: 0.3s;         
+}
+.textos a:hover{
+color: aqua;
+text-shadow: 1px 1px 10px white;
+}
+.textos .main-text  {
+    font-size: 1.3rem;
+    color: rgb(187, 187, 187);
+    font-weight: bold;    
+}
+.flex{
+    display: flex;
+    justify-content: space-between;     
+      
+}
+.flex .coin p, .days p{
+    color: rgb(59, 199, 255);
+    font-size: 1.5rem;
+    font-weight: bolder;
+    
+}
+.flex .days p{
+    color: white; 
+    padding: 20px 0;   
+}
+.coin, .days {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    /* margin-top: 10px; */
+    font-size: 1rem;
+    color: white;
+    border-top: 1px solid white;
+    padding-top: 30px;
+}
+.footer p{
+    font-size: 1.5rem;
+    text-shadow: -1pc 1px 8px white;
+}
+
+.footer img {
+    width: 3.5rem;
+    border: 2px solid white;
+    border-radius: 50px;
+}
+
+.footer span {
+    color: rgb(2, 176, 245);
+}
+
+.footer a{
+    transition: 0.3s;
+}
+.footer a:hover{
+    color:aqua;
+    text-shadow: -1pc 1px 8px white;
+}
